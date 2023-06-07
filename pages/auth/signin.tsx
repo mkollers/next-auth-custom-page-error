@@ -8,7 +8,7 @@ export default function Signin() {
 
   useEffect(() => {
     if (status === "unauthenticated") {
-      signIn("keycloak", { callbackUrl: "/work" });
+      signIn("keycloak");
     } else if (status === "authenticated") {
       router.push("/");
     }
